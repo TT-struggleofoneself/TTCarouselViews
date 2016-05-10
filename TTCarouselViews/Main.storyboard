@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hn-x9-oce">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7e0-Ea-bqx"/>
+                                    <constraint firstAttribute="width" constant="119" id="Kz9-Me-p9b"/>
+                                </constraints>
+                                <state key="normal" title="第二种">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7e0-Ea-bqx"/>
+                                        <exclude reference="Kz9-Me-p9b"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7e0-Ea-bqx"/>
+                                        <include reference="Kz9-Me-p9b"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="fz8-lB-jCH" kind="modal" id="Sz8-IY-OwY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Hn-x9-oce" secondAttribute="bottom" constant="20" id="MGN-GY-ifb"/>
+                            <constraint firstAttribute="trailing" secondItem="2Hn-x9-oce" secondAttribute="trailing" constant="140" id="TDa-3c-v5w"/>
+                            <constraint firstItem="2Hn-x9-oce" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="141" id="UEO-Yb-wc1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2Hn-x9-oce"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="MGN-GY-ifb"/>
+                                <exclude reference="TDa-3c-v5w"/>
+                                <exclude reference="UEO-Yb-wc1"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2Hn-x9-oce"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="MGN-GY-ifb"/>
+                                <include reference="TDa-3c-v5w"/>
+                                <include reference="UEO-Yb-wc1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="xFd-8B-fDm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297.5" y="238"/>
+        </scene>
+        <!--First Controller-->
+        <scene sceneID="CvJ-1m-Vl8">
+            <objects>
+                <viewController storyboardIdentifier="FirstController" id="fz8-lB-jCH" customClass="FirstController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hFI-zt-h2a"/>
+                        <viewControllerLayoutGuide type="bottom" id="67e-A1-bVt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKs-4S-SWb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBL-bt-1Du">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="158" y="15" width="140" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="8E8-cf-HWr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaB-eD-zmf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qTB-ha-xx0"/>
+                                    <constraint firstAttribute="width" constant="117" id="yzC-o3-TSQ"/>
+                                </constraints>
+                                <state key="normal" title="第三种">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qTB-ha-xx0"/>
+                                        <exclude reference="yzC-o3-TSQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="qTB-ha-xx0"/>
+                                        <include reference="yzC-o3-TSQ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="POs-eK-c6K" kind="modal" id="fAn-XS-JkJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AaB-eD-zmf" firstAttribute="leading" secondItem="gKs-4S-SWb" secondAttribute="leading" constant="131" id="PIm-eq-rdq"/>
+                            <constraint firstItem="67e-A1-bVt" firstAttribute="top" secondItem="AaB-eD-zmf" secondAttribute="bottom" constant="13" id="VVf-Tm-hsh"/>
+                            <constraint firstAttribute="trailing" secondItem="AaB-eD-zmf" secondAttribute="trailing" constant="152" id="utk-wQ-qdL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JBL-bt-1Du"/>
+                                <exclude reference="AaB-eD-zmf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="VVf-Tm-hsh"/>
+                                <exclude reference="PIm-eq-rdq"/>
+                                <exclude reference="utk-wQ-qdL"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="JBL-bt-1Du"/>
+                                <include reference="AaB-eD-zmf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="VVf-Tm-hsh"/>
+                                <include reference="PIm-eq-rdq"/>
+                                <include reference="utk-wQ-qdL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="QK6-Ek-Amc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KI6-sA-ZjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011.5" y="238"/>
+        </scene>
+        <!--Second Controller-->
+        <scene sceneID="dGr-7A-96r">
+            <objects>
+                <viewController storyboardIdentifier="SecondController" id="POs-eK-c6K" customClass="SecondController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aOa-PE-EHN"/>
+                        <viewControllerLayoutGuide type="bottom" id="cmD-IJ-SWv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I6b-KP-Exv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQQ-pA-Ji3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="153" y="14" width="139" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="fz8-lB-jCH" kind="modal" id="ZUF-7v-Kbw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tQQ-pA-Ji3"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tQQ-pA-Ji3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFJ-uY-Jix" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2649" y="232"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZUF-7v-Kbw"/>
+    </inferredMetricsTieBreakers>
+</document>
